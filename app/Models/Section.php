@@ -18,6 +18,6 @@ class Section extends Model
 
     public function questions()
     {
-        return $this->belongsToMany(Question::class);
+        return $this->hasMany(Question::class)->whereNull('parent_question_id');
     }
 }

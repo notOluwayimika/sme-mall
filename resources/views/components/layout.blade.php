@@ -18,10 +18,15 @@
 
 <body class="">
     <x-header />
-    <div class="flex">
+    <div class="">
         <x-sidebar />
-        {{ $slot }}
+        <div class="ml-44">
+            {{ $slot }}
+            <x-alert />
+        </div>
+
     </div>
+
 
 </body>
 

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\QuestionController;
+use App\Http\Controllers\SectionController;
 use App\Http\Controllers\SurveyController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,5 +24,13 @@ Route::prefix('surveys')->group(function () {
 
 Route::prefix('questions')->group(function () {
     Route::put('/{question}', [QuestionController::class, 'update'])->name('questions.update');
+    Route::delete('/options/{option}', [QuestionController::class, 'destroyOption'])->name('questions.options.destroy');
+    Route::post('/options/{question}', [QuestionController::class, 'createOption'])->name('questions.options.create');
+});
+
+Route::prefix('sections')->group(function(){
+    Route::put('/{section}', [SectionController::class, 'update'])->name('sections.update');
+    Route::delete('/{section}', [SectionController::class, 'destroy'])->name('sections.destroy');
+    Route::post('/{survey}', [SectionController::class, 'store'])->name('sections.store');
 });
 

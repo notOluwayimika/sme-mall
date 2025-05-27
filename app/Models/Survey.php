@@ -13,7 +13,7 @@ class Survey extends Model
 
     public function sections()
     {
-        return $this->belongsToMany(Section::class);
+        return $this->hasMany(Section::class);
     }
 
     public function entries()
