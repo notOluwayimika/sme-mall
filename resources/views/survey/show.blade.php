@@ -37,6 +37,23 @@
                     </div>
                 @endforeach
             </div>
+            <div class="bg-white p-6 rounded shadow mb-6">
+                <h2 class="text-2xl font-bold mb-2">Entries</h2>
+                <div class="space-y-4">
+                    @foreach ($survey->entries as $entry)
+                        <div class="bg-gray-50 font-semibold p-4 rounded border flex justify-between">
+                            <div>
+                                <p class="font-medium mb-1">{{ $entry->participant->name }}</p>
+                                <p class="text-sm text-gray-400 mb-1">{{ $entry->created_at }}</p>
+                            </div>
+                            <div>
+                                <a href="/surveys/{{ $survey->id }}/score/{{ $entry->id }}">View Entry</a>
+                            </div>
+
+                        </div>
+                    @endforeach
+                </div>
+            </div>
         @else
             <p class="text-gray-600">No survey found.</p>
         @endif

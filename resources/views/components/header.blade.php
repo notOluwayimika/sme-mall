@@ -19,24 +19,12 @@
                             <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> About </a>
                         </li>
 
-                        <li>
-                            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Careers </a>
+
+                        <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Services </a>
                         </li>
 
                         <li>
-                            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> History </a>
-                        </li>
-
-                        <li>
-                            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Services </a>
-                        </li>
-
-                        <li>
-                            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Projects </a>
-                        </li>
-
-                        <li>
-                            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Blog </a>
+                            <a class="text-gray-500 transition hover:text-gray-500/75" href="#"> Partners </a>
                         </li>
                     </ul>
                 </nav>

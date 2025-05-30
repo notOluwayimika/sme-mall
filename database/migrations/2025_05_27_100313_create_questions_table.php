@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('questions', function (Blueprint $table) {
             $table->id();
             $table->uuid('uuid')->unique();
-            $table->foreignId('section_id')->constrained()->onDelete('cascade');
+            $table->foreignId('section_id')->nullable()->constrained()->onDelete('cascade');
             $table->foreignId('parent_question_id')->nullable()->constrained('questions')->onDelete('cascade');
             $table->string('question');
-            $table->enum('question_type', ['text', 'radio', 'checklist']);
+            $table->enum('question_type', ['text', 'radio', 'checklist', 'leading']);
             $table->string('reference_code')->nullable()->index(); // For filtering by theme
             $table->timestamps();
         });

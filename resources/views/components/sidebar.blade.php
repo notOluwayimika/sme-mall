@@ -25,13 +25,6 @@
 
                     <ul class="mt-2 space-y-1 px-4">
                         <li>
-                            <a href="/surveys"
-                                class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                All Surveys
-                            </a>
-                        </li>
-
-                        <li>
                             <a href="/surveys/create"
                                 class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
                                 New Survey
@@ -40,26 +33,11 @@
                     </ul>
                 </details>
             </li>
-
-            <li>
-                <a href="#"
-                    class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                    Billing
-                </a>
-            </li>
-
-            <li>
-                <a href="#"
-                    class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                    Invoices
-                </a>
-            </li>
-
             <li>
                 <details class="group [&_summary::-webkit-details-marker]:hidden">
                     <summary
                         class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                        <span class="text-sm font-medium"> Account </span>
+                        <span class="text-sm font-medium"> Entries </span>
 
                         <span class="shrink-0 transition duration-300 group-open:-rotate-180">
                             <svg xmlns="http://www.w3.org/2000/svg" class="size-5" viewBox="0 0 20 20"
@@ -75,21 +53,7 @@
                         <li>
                             <a href="#"
                                 class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                Details
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#"
-                                class="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                Security
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="#"
-                                class="w-full rounded-lg px-4 py-2 [text-align:_inherit] text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700">
-                                Logout
+                                All Entries
                             </a>
                         </li>
                     </ul>

@@ -5,8 +5,11 @@
             <h2 class="text-xl font-bold mb-4">Create Survey</h2>
             <form method="POST" action="{{ route('surveys.store') }}">
                 @csrf
+                <label class="block text-sm font-medium text-gray-700 mb-1">Title</label>
                 <input name="title" class="border p-2 w-full mb-3" placeholder="Survey Title" required />
+                <label class="block text-sm font-medium text-gray-700 mb-1">Description</label>
                 <textarea name="description" class="border p-2 w-full mb-3" placeholder="Description"></textarea>
+                <label class="block text-sm font-medium text-gray-700 mb-1">Reference</label>
                 <input name="reference_code" class="border p-2 w-full mb-3" placeholder="Reference Code" />
                 <button class="bg-blue-500 text-white px-4 py-2 rounded">Create Survey</button>
             </form>
@@ -20,6 +23,7 @@
                     <h3 class="font-semibold text-lg">{{ $survey->title }}</h3>
                     <p>{{ $survey->description }}</p>
                     <a href="{{ route('surveys.show', $survey) }}" class="text-blue-600 underline">View</a>
+                    <a href="{{ route('surveys.edit', $survey) }}" class="text-blue-600 underline">Edit</a>
                 </div>
             @endforeach
         </div>
